@@ -5,6 +5,10 @@
 //  Created by shiv on 6/13/21.
 //
 
+/**
+    Passing data forward using storyboard segue requries you to use the prepareforsegue method to pass the data. Data can also be pass forwad using the navigation and pushing the new vc on the stack, which is being done programaticlly.
+*/
+
 import UIKit
 
 class DisplayVC: UIViewController {
@@ -36,6 +40,7 @@ extension DisplayVC {
         
         if segue.identifier == "detailSegue" {
             
+            // access the current cell and get all the data that there and save it to the index_path variable. You have to use this method when passing data forward from a table view cell
             if let index_path = self.table_View.indexPathForSelectedRow {
                 
                 let detailVC = segue.destination as! DetailVC

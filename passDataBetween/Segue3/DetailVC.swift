@@ -15,6 +15,7 @@ class DetailVC: UIViewController {
     var zord = ""
     var rangerData: [String] = []
     
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

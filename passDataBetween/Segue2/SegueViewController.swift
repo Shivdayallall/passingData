@@ -7,7 +7,7 @@
 
 import UIKit
 
-// this vc is being call dynamicly without a storyboard, so the objects also have to be created dynamically.
+// this vc is being call dynamicly without a storyboard, so the objects also have to be created dynamically. and be initilized
 
 class SegueViewController: UIViewController {
     
